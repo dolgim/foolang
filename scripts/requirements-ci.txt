@@ -1,0 +1,2 @@
+# CI dependencies for AI test generation
+claude-code-sdk>=0.1.0

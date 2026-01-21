@@ -65,3 +65,23 @@ print(x)                // maps to console.log
 
 1. **Constant Folding** - Evaluates constant expressions at compile time (`1 + 2` → `3`)
 2. **Dead Code Elimination** - Removes unused variables and functions
+
+## CI/CD
+
+### AI Test Generation
+
+GitHub Actions workflow that uses Claude Code SDK to automatically generate edge case tests.
+
+```bash
+# Run locally (requires ANTHROPIC_API_KEY)
+python scripts/ai_test_generator.py
+
+# Run via GitHub Actions
+# Go to Actions → AI Test Generation → Run workflow
+```
+
+The AI agent will:
+1. Analyze the codebase
+2. Generate edge case tests
+3. Run tests and analyze failures
+4. Create a PR with findings (if issues found)
