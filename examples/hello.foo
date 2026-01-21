@@ -1,0 +1,21 @@
+// Foolang example: hello.foo
+
+// Variable declarations with constant folding
+let x = 1 + 2 * 3
+let greeting = "Hello, Foolang!"
+
+// Function definition
+fn add(a, b) {
+    return a + b
+}
+
+// Function call
+let result = add(10, 20)
+
+// Print output
+print(greeting)
+print(result)
+print(x)
+
+// This unused variable will be removed by dead code elimination
+let unused = 999
