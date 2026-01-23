@@ -29,6 +29,7 @@ select = ["E", "F", "I", "N", "W"]
 
 [dependency-groups]
 dev = [
+    "claude-code-sdk>=0.0.25",
     "pytest>=8.0.0",
     "ruff>=0.4.0",
 ]
